@@ -1,8 +1,16 @@
 type Query {
-    validateVat(
-        vat_number: string @doc(description: "Vat Number"),
-        country_id: string @doc(description: "Country Id"),
-    ): Boolean
-    @resolver(class:"Elgentos\\VatfallbackGraphQl\\Model\\Resolver\\ValidateVat")
-    @doc(description:"Validate Vat Number")
+    CompanyLookup(
+        vatNumber: String @doc(description: "Vat Number"),
+    ): CompanyLookupResult
+    @resolver(class:"Elgentos\\VatfallbackGraphQl\\Model\\Resolver\\CompanyLookup")
+    @doc(description:"Lookup company info based on vat number")
+}
+
+type CompanyLookupResult
+{
+    status: String
+    country: String
+    company_name: String
+    company_address: String
+    message: String
 }
