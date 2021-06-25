@@ -1,0 +1,23 @@
+{
+    "name": "elgentos/m2-vatfallback-graph-ql",
+    "description": "Provides graph ql endpoint to dutchento/m2-vatfallback",
+    "license": "MIT",
+    "type": "magento2-module",
+    "authors": [
+        {
+            "name": "Sander Jongsma",
+            "email": "sander@elgentos.nl"
+        }
+    ],
+    "require": {
+        "dutchento/m2-vatfallback": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Elgentos\\VatfallbackGraphQl\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
