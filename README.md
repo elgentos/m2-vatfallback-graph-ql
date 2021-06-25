@@ -8,7 +8,7 @@ In the Dutchento Vatfallback module it is possible to use the API endpoint to ge
 With this module this can be done by GraphQl:
 ```graphql
 query {
-  CompanyLookup(
+  companyLookup(
     vatNumber: "NL133001477B01"
   ) {
     status, 

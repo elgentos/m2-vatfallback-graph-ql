@@ -1,5 +1,5 @@
 type Query {
-    CompanyLookup(
+    companyLookup(
         vatNumber: String @doc(description: "Vat Number"),
     ): CompanyLookupResult
     @resolver(class:"Elgentos\\VatfallbackGraphQl\\Model\\Resolver\\CompanyLookup")
