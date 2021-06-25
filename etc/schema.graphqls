@@ -1,0 +1,8 @@
+type Query {
+    validateVat(
+        vat_number: string @doc(description: "Vat Number"),
+        country_id: string @doc(description: "Country Id"),
+    ): Boolean
+    @resolver(class:"Elgentos\\VatfallbackGraphQl\\Model\\Resolver\\ValidateVat")
+    @doc(description:"Validate Vat Number")
+}
