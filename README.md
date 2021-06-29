@@ -1,6 +1,6 @@
 # VatfallbackGraphQL
 
-**VatfallbackGraphQL** adds a GraphQl endpoint to the Dutchento Vatfallback module for Magento 2.
+**VatfallbackGraphQL** adds a GraphQl endpoint to the [Dutchento Vatfallback module for Magento 2](https://github.com/Dutchento/m2-vatfallback).
 
 In the Dutchento Vatfallback module it is possible to use the API endpoint to get company data by VAT number
 `http://domain.com/rest/V1/vat/companylookup/NL133001477B01`
