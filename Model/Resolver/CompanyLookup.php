@@ -35,8 +35,8 @@ class CompanyLookup implements ResolverInterface
         Field $field,
         $context,
         ResolveInfo $info,
-        array $value = null,
-        array $args = null
+        ?array $value = null,
+        ?array $args = null
     ): CompanyLookupResultInterface {
         if (!isset($args['vatNumber'])) {
             throw new GraphQlInputException(__('Check input params.'));
